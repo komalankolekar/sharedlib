@@ -1,6 +1,6 @@
 def call(username){
   echo "Hi ${username}"
-   if ("${username}" != "admin"){
+   if ("${username}" != "[admin]"){
     echo "This is not admin user and username is $username"
   }
   else{
