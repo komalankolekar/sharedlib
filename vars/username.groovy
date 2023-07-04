@@ -1,4 +1,4 @@
-def call(String username){
+def call(username){
   if ($username != admin){
     println "This is not admin user and username is $username"
   }
