@@ -5,5 +5,6 @@ def call(username){
   }
   else{
     echo "This is admin user"
+    currentBuild.build().getExecutor().interrupt(Result.ABORTED)
   }  
 }
