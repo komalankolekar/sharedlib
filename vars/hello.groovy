@@ -9,6 +9,7 @@ def call(username){
                         //or
                 //error "Failed, exiting now..."
   currentBuild.result = 'ABORTED'
+     echo "${currentBuild.result}"
   return
      echo "after fail"
   }
