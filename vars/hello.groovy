@@ -4,7 +4,7 @@ def call(username){
    if ("${username}" != "[admin]"){
     echo "This is not admin user and username is $username"
      currentBuild.result = 'FAILURE'
-     //error "This pipeline stops here!"
+     error "This pipeline stops here!"
   return
     
      //echo "after fail"
