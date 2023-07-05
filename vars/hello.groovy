@@ -4,12 +4,12 @@ def call(username){
     echo "This is not admin user and username is $username"
      //currentBuild.build().getExecutor().interrupt(Result.FAILURE)
      //return
-     //def build = Jenkins.instance.getItemByFullName("jobName").getBuildByNumber(jobNumber)
-               sh "exit 1"
+   
+               //sh "exit 1"
                         //or
-                error "Failed, exiting now..."
-currentBuild.result = 'ABORTED'
-return
+                //error "Failed, exiting now..."
+  currentBuild.result = 'ABORTED'
+  return
      echo "after fail"
   }
   else{
