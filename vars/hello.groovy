@@ -6,7 +6,7 @@ def call(username){
      //return
      //def build = Jenkins.instance.getItemByFullName("jobName").getBuildByNumber(jobNumber)
      currentBuild.build().getExecutor().doStop()
-     currentBuild.build().getExecutor().doKill()
+     //currentBuild.build().getExecutor().doKill()
      echo "after fail"
   }
   else{
