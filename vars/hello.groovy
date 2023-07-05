@@ -1,15 +1,13 @@
 
 def call(username){
-  echo "Hi ${username}"
-   if ("${username}" != "[admin]"){
-    echo "This is not admin user and username is $username"
-     currentBuild.result = 'FAILURE'
-     error "${username} Can not execute if branch is other than Dev!"
-  return
-    
-
-  }
-  else{
-    echo "This is admin user"
-  }  
+    echo "Hi ${username}"
+    if ("${username}" != "[Singtel IoT]"){
+        echo "$username does not have required privilege"
+        currentBuild.result = 'FAILURE'
+        error " can execute pipeline only for dev environments!"   // only added this line
+        return
+    }
+    else{
+        echo "$username allowed to execute this pipeline"
+    }
 }
