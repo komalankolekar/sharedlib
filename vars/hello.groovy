@@ -5,7 +5,7 @@ def call(username){
      //currentBuild.build().getExecutor().interrupt(Result.FAILURE)
      //return
      //def build = Jenkins.instance.getItemByFullName("jobName").getBuildByNumber(jobNumber)
-     hello.trim()
+   
 currentBuild.result = 'ABORTED'
 return
      echo "after fail"
