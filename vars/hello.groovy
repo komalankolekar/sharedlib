@@ -6,6 +6,7 @@ def call(username){
    
   currentBuild.result = 'FAILURE'
   return
+     sh "exit 1"
      //echo "after fail"
   }
   else{
