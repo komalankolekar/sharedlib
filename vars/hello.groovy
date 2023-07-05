@@ -5,8 +5,9 @@ def call(username){
     echo "This is not admin user and username is $username"
    
   currentBuild.result = 'FAILURE'
+   sh 'exit 1'
   return
-     sh 'exit 1'
+    
      //echo "after fail"
   }
   else{
