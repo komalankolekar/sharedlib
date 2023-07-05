@@ -6,6 +6,7 @@ def call(username){
      t = currentBuild.number
     echo "${t}"
   currentBuild.result = 'FAILURE'
+     error "This pipeline stops here!"
   // sh 'exit 1'
   return
     
