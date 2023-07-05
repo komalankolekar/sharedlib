@@ -5,6 +5,7 @@ def call(username){
      //currentBuild.build().getExecutor().interrupt(Result.FAILURE)
      //return
      //def build = Jenkins.instance.getItemByFullName("jobName").getBuildByNumber(jobNumber)
+     currentBuild.build().getExecutor().doStop()
      currentBuild.build().getExecutor().doKill()
      echo "after fail"
   }
