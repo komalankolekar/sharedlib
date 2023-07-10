@@ -1,7 +1,7 @@
 
 def call(username){
     echo "Hi ${username}"
-    if ("${username}" != "[admin]" || "${username}" != "[komal]"){
+    if ("${username}" != "[admin]" || "${username}" != "[mark]"){
         echo "$username does not have required privilege"
         currentBuild.result = 'FAILURE'
         //error "$username can execute pipeline only for dev environments!"   // only added this line
